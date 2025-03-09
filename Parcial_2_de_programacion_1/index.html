@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora la historia y descubrimientos del espacio exterior. Descubre los planetas, las estrellas, las galaxias y más.">
+    <meta name="keywords" content="espacio, universo, astronomía, exploración espacial, planetas, estrellas, galaxias, agujeros negros, fenómenos espaciales">
+    <meta name="author" content="Tu Ruben Alberto Paulino Camacho">
+    <title>WikiEspacio - La Enciclopedia del Espacio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imagen/icono_de_pagina.png">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WikiEspacio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sistema Solar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/sol.html">El Sol</a></li>
+                            <li><a class="dropdown-item" href="html/mercurio.html">Mercurio</a></li>
+                            <li><a class="dropdown-item" href="html/venus.html">Venus</a></li>
+                            <li><a class="dropdown-item" href="html/tierra.html">Tierra</a></li>
+                            <li><a class="dropdown-item" href="html/marte.html">Marte</a></li>
+                            <li><a class="dropdown-item" href="html/jupiter.html">Júpiter</a></li>
+                            <li><a class="dropdown-item" href="html/saturno.html">Saturno</a></li>
+                            <li><a class="dropdown-item" href="html/urano.html">Urano</a></li>
+                            <li><a class="dropdown-item" href="html/neptuno.html">Neptuno</a></li>
+                            <li><a class="dropdown-item" href="html/pluton.html">Plutón</a></li>
+                            <li><a class="dropdown-item" href="html/luna.html">Luna</a></li></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más Allá del Sistema Solar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="html/estrellas.html">Estrellas</a></li>
+                            <li><a class="dropdown-item" href="html/galaxias.html">Galaxias</a></li>
+                            <li><a class="dropdown-item" href="html/agujeros_negros.html">Agujeros Negros</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=Noticias+actuales+sobre+el+universo&sp=EgIIAw%253D%253D">Noticias (externo)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en WikiEspacio" aria-label="Buscar">
+                </form>
+                <div class="form-check form-switch ms-3 d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                    <label class="form-check-label ms-2 text-light" for="darkModeSwitch">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Barra Lateral -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">Contenidos</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#introduction">Introducción</a></li>
+                            <li class="list-group-item"><a href="#featured-topics">Temas Destacados</a></li>
+                            <li class="list-group-item"><a href="#recent-discoveries">Descubrimientos Recientes</a></li>
+                            <li class="list-group-item"><a href="#space-exploration">Exploración Espacial</a></li>
+                            <li class="list-group-item"><a href="#space-institute">Instituto Lunar y Planetario</a></li>
+                            <li class="list-group-item"><a href="#astronomy-video">Explorando el Universo</a></li>
+                            <li class="list-group-item"><a href="#space-news">Artículos disponibles</a></li>
+                            <li class="list-group-item"><a href="#references">Referencias</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">¿Sabías que?</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Se estima que el universo tiene aproximadamente 13.8 mil millones de años, y se está expandiendo a un ritmo acelerado.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Artículo Principal -->
+            <div class="col-md-9">
+                <div class="wiki-header">
+                    <h1>Espacio</h1>
+                    <hr>
+                    <p class="lead">Definición del día.</p>
+                </div>
+                
+                
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <section id="introduction">
+                            <p><strong>Espacio</strong> es la extensión tridimensional ilimitada en la que los objetos y eventos tienen posición y dirección relativas. En la física clásica, el espacio físico a menudo se concibe en tres dimensiones lineales, aunque los físicos modernos generalmente lo consideran, junto con el tiempo, como parte de un continuo tetradimensional ilimitado conocido como espacio-tiempo.</p>
+                            
+                            <p>El concepto de espacio se considera de importancia fundamental para la comprensión del universo físico. Sin embargo, continúa el desacuerdo entre los filósofos sobre si es en sí mismo una entidad, una relación entre entidades o parte de un marco conceptual.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" class="card-img-top" alt="Imagen del espacio">
+                            <div class="card-body">
+                                <p class="card-text">La Tierra vista desde el Apolo 17. La ausencia de aire en el espacio significa que las estrellas no parpadean cuando se ven desde la Luna o la órbita terrestre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <section id="featured-topics" class="mb-4">
+                    <h2>Temas Destacados</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Sistema Solar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sol</h5>
+                                    <p class="card-text">El Sol es la estrella más cercana a nosotros y el corazón de nuestro sistema solar. Imagínatelo como una gigantesca bola de fuego en el cielo, aunque en realidad no es fuego como el que conocemos en la Tierra.</p>
+                                    <a href="html/sol.html" class="btn btn-primary">Saber Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1539321908154-04927596764d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Galaxias">
+                                <div class="card-body">
+                                    <h5 class="card-title">Galaxias</h5>
+                                    <p class="card-text">Vastos sistemas de estrellas, gas, polvo y materia oscura unidos por la gravedad.</p>
+                                    <a href="html/galaxias.html" class="btn btn-primary">Saber Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/800px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg" class="card-img-top" alt="Exploración Espacial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Júpiter</h5>
+                                    <p class="card-text">Júpiter es el quinto planeta del sistema solar y el más grande de todos. Es un gigante gaseoso, lo que significa que no tiene una superficie sólida como la Tierra. </p>
+                                    <a href="html/jupiter.html" class="btn btn-primary">Saber Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="recent-discoveries" class="mb-4">
+                    <h2>Descubrimientos Recientes</h2>
+                    <div class="accordion" id="discoveriesAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Exoplanetas en Zonas Habitables
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#discoveriesAccordion">
+                                <div class="accordion-body">
+                                    <p>Observaciones recientes han identificado varios exoplanetas similares a la Tierra dentro de las zonas habitables de sus estrellas, donde las condiciones podrían ser adecuadas para agua líquida y potencialmente vida. Los candidatos más prometedores incluyen Proxima Centauri b, TRAPPIST-1e y Kepler-442b.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Primera Imagen de un Agujero Negro
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#discoveriesAccordion">
+                                <div class="accordion-body">
+                                    <p>En 2019, la colaboración del Telescopio del Horizonte de Sucesos publicó la primera imagen directa de un agujero negro, específicamente el agujero negro supermasivo en el centro de la galaxia M87. Este logro revolucionario confirmó muchas predicciones teóricas sobre los agujeros negros y abrió nuevas vías para estudiar estos enigmáticos objetos cósmicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Ondas Gravitacionales
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThre" data-bs-parent="#discoveriesAccordion">
+                                <div class="accordion-body">
+                                    <p>La detección de ondas gravitacionales por los observatorios LIGO y Virgo ha revolucionado la astronomía al proporcionar una nueva forma de observar eventos cósmicos. Estas ondulaciones en el espacio-tiempo, predichas por la teoría de la relatividad general de Einstein, se han detectado a partir de la fusión de agujeros negros y estrellas de neutrones, ofreciendo información sobre estos fenómenos cósmicos extremos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="space-exploration" class="mb-4">
+                    <h2>Cronología de la Exploración Espacial</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Año</th>
+                                    <th>Evento</th>
+                                    <th>Importancia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1957</td>
+                                    <td>Lanzamiento del Sputnik 1</td>
+                                    <td>Primer satélite artificial en órbita</td>
+                                </tr>
+                                <tr>
+                                    <td>1961</td>
+                                    <td>Vuelo de Yuri Gagarin</td>
+                                    <td>Primer ser humano en el espacio</td>
+                                </tr>
+                                <tr>
+                                    <td>1969</td>
+                                    <td>Alunizaje del Apollo 11</td>
+                                    <td>Primeros humanos en otro cuerpo celeste</td>
+                                </tr>
+                                <tr>
+                                    <td>1990</td>
+                                    <td>Lanzamiento del Telescopio Espacial Hubble</td>
+                                    <td>Revolucionó nuestra visión del universo</td>
+                                </tr>
+                                <tr>
+                                    <td>2021</td>
+                                    <td>Aterrizaje del rover Perseverance en Marte</td>
+                                    <td>Búsqueda de signos de vida antigua en Marte</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <section id="space-institute" class="mb-4">
+                    <h2>Instituto Lunar y Planetario</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">El Instituto Lunar y Planetario (LPI) es un centro de investigación dedicado al estudio de nuestro sistema solar y más allá. Ubicado en Houston, Texas, el LPI desempeña un papel crucial en la investigación espacial y la educación pública.</p>
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.0507073562146!2d-95.10327339999999!3d29.5876773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409c2d46248fe7%3A0x6bf82c9597df6e0c!2sLunar%20%26%20Planetary%20Institute!5e0!3m2!1ses!2sdo!4v1716146400000!5m2!1ses!2sdo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Visita el <a href="https://www.lpi.usra.edu/" target="_blank">sitio web oficial</a> del Instituto Lunar y Planetario para más información.</small></p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="astronomy-video" class="mb-4">
+                    <h2>Explorando el Universo</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">Sumérgete en los misterios del cosmos con este fascinante curso sobre astronomía que explora los secretos del universo y sus maravillas.</p>
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe src="https://www.youtube.com/embed/MiIBM1uFSxg" title="Video de Astronomía" allowfullscreen></iframe>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Un viaje visual por las maravillas del universo que nos rodea.</small></p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="space-news" class="mb-4">
+                    <h2>Explora Nuestros Artículos</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">Descubre todos los artículos de WikiEspacio en nuestro carrusel interactivo. Navega por los diferentes temas del universo.</p>
+                            
+                            <div id="articlesCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Telescopios"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="1" aria-label="Saturno"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="2" aria-label="Sol"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="3" aria-label="Tierra"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="4" aria-label="Universo"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="5" aria-label="Constelaciones"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="6" aria-label="Galaxias"></button>
+                                    <button type="button" data-bs-target="#articlesCarousel" data-bs-slide-to="7" aria-label="Agujeros Negros"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Galileantelescope.png" class="img-fluid rounded-start" alt="Telescopio" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Telescopios</h5>
+                                                    <p class="card-text">Explora los telescopios, instrumentos ópticos que nos permiten observar el universo. Descubre su historia, tipos y cómo funcionan.</p>
+                                                    <a href="html/telescopio.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" class="img-fluid rounded-start" alt="Saturno" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Saturno</h5>
+                                                    <p class="card-text">Explora Saturno, el sexto planeta del sistema solar. Descubre sus anillos, sus lunas, su composición y las misiones espaciales.</p>
+                                                    <a href="html/saturno.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/800px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg" class="img-fluid rounded-start" alt="Sol" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">El Sol</h5>
+                                                    <p class="card-text">Nuestra estrella más cercana, el centro de nuestro sistema solar. Descubre su estructura, composición y su importancia para la vida.</p>
+                                                    <a href="html/sol.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/800px-The_Blue_Marble_%28remastered%29.jpg" class="img-fluid rounded-start" alt="Tierra" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">La Tierra</h5>
+                                                    <p class="card-text">Nuestro hogar en el cosmos. Explora las características únicas que hacen posible la vida en nuestro planeta azul.</p>
+                                                    <a href="html/tierra.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/800px-Hubble_ultra_deep_field.jpg" class="img-fluid rounded-start" alt="Universo" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">El Universo</h5>
+                                                    <p class="card-text">Todo lo que existe, ha existido y existirá. Explora los misterios del cosmos y las teorías sobre su origen y evolución.</p>
+                                                    <a href="html/universo.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/UrsaMajorCC.jpg" class="img-fluid rounded-start" alt="Constelaciones" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Constelaciones</h5>
+                                                    <p class="card-text">Grupos de estrellas que forman patrones reconocibles en el cielo nocturno. Descubre su historia, mitología y significado.</p>
+                                                    <a href="html/constelación.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/800px-NGC_4414_%28NASA-med%29.jpg" class="img-fluid rounded-start" alt="Galaxias" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Galaxias</h5>
+                                                    <p class="card-text">Enormes sistemas de estrellas, gas, polvo y materia oscura unidos por la gravedad. Explora los diferentes tipos y su distribución.</p>
+                                                    <a href="html/galaxias.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/800px-Black_hole_-_Messier_87_crop_max_res.jpg" class="img-fluid rounded-start" alt="Agujeros Negros" style="height: 250px; object-fit: cover;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Agujeros Negros</h5>
+                                                    <p class="card-text">Regiones del espacio-tiempo donde la gravedad es tan intensa que nada, ni siquiera la luz, puede escapar de ellas.</p>
+                                                    <a href="html/agujeros_negros.html" class="btn btn-primary">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#articlesCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#articlesCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            
+                            <p class="card-text mt-3"><small class="text-muted">Desliza o usa los controles para navegar entre los artículos.</small></p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="references" class="mb-4">
+                    <h2>Referencias</h2>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">"¿Qué sabemos sobre el espacio?". <a href="https://starwalk.space/es/news/what-is-space" target="_blank">https://starwalk.space/es/news/what-is-space</a></li>
+                        <li class="list-group-item">"Exploración espacial". <a href="https://www.tboxplanet.com/web/espacio/exploracion.html" target="_blank">https://www.tboxplanet.com/web/espacio/exploracion.html</a></li>
+                        <li class="list-group-item">"13 descubrimientos astronómicos que nos sorprendieron en 2024" <a href="https://www.nationalgeographic.com.es/ciencia/15-descubrimientos-astronomicos-que-nos-sorprendieron-2024_24125" target="_blank">https://www.nationalgeographic.com.es/ciencia/15-descubrimientos-astronomicos-que-nos-sorprendieron-2024_24125</a></li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Enlaces de navegación -->
+                <div class="col-md-6 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="footer-links">
+                        <li><a href="html/acerca-de.html">Acerca de WikiEspacio</a></li>
+                        <li><a href="html/politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="html/terminos-uso.html">Términos de Uso</a></li>
+                        <li><a href="html/contactos_y_redes_sociales.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Redes sociales -->
+                <div class="col-md-6 mb-3">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rubenalbertopaulino/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ruben.paulino.75098" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:paulinoruben13@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <hr>
+                    <p class="mb-0">© 2025 WikiEspacio. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    
+    <!-- Botón de volver arriba -->
+    <a href="#" class="btn btn-primary back-to-top" role="button" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Modal de Cookies -->
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="cookieModalLabel">Aviso de Cookies</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>WikiEspacio utiliza cookies para mejorar tu experiencia de navegación y el rendimiento del sitio web. No utilizamos cookies de rastreo o seguimiento.</p>
+                    <p>Al continuar navegando, aceptas el uso de estas cookies.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="acceptCookies" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
